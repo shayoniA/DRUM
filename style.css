@@ -20,31 +20,36 @@ h1
     display: flex;
     justify-content: space-around;
 }
-#b1
+#ba
 {
     background-image: url("./tom1.png");
 }
-#b7
+#bg
 {
     background-image: url("./tom2.png");
 }
-#b2
+#bb
 {
     background-image: url("./tom3.png");
 }
-#b6
+#bf
 {
     background-image: url("./tom4.png");
 }
-#b3
+#bc
 {
     background-image: url("./crash.png");
 }
-#b4
+#bd
 {
     background-image: url("./kick.png");
 }
-#b5
+#be
 {
     background-image: url("./snare.png");
+}
+.active
+{
+    box-shadow: 0 3px 4px 0 cyan;
+    opacity: 0.5;
 }
