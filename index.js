@@ -35,54 +35,58 @@ for(var i=0;i<document.querySelectorAll(".b").length;i++)
             default:
                 console.log("Button does not exist...")
         }
-
+        buttonamine(ch);
     });
 }
 
 
 document.addEventListener("keypress",function(event){
     keysound(event.key);
+    buttonamine(event.key);
 });
 function keysound(key)
 {
     switch(key)
     {
         case "A":
-        case "a":
             var aa = new Audio("./tom-1.mp3");
             aa.play();
             break;
         case "B":
-        case "b":
             var ab = new Audio("./tom-3.mp3");
             ab.play();
             break;
         case "C":
-        case "c":
             var ac = new Audio("./crash.mp3");
             ac.play();
             break;
         case "D":
-        case "d":
             var ad = new Audio("./kick-bass.mp3");
             ad.play();
             break;
         case "E":
-        case "e":
             var ae = new Audio("./snare.mp3");
             ae.play();
             break;
         case "F":
-        case "f":
             var af = new Audio("./tom-4.mp3");
             af.play();
             break;
         case "G":
-        case "g":
             var ag = new Audio("./tom-2.mp3");
             ag.play();
             break;
         default:
             console.log("Invalid keypress...");
     }
+}
+
+
+function buttonamine(letter)
+{
+    var active_button=document.querySelector("#b"+letter);
+    active_button.classList.add("active");
+    setTimeout (function(){
+        active_button.classList.remove("active");
+    }, 150);
 }
