@@ -20,31 +20,31 @@ h1
     display: flex;
     justify-content: space-around;
 }
-#ba
+#bA
 {
     background-image: url("./tom1.png");
 }
-#bg
+#bG
 {
     background-image: url("./tom2.png");
 }
-#bb
+#bB
 {
     background-image: url("./tom3.png");
 }
-#bf
+#bF
 {
     background-image: url("./tom4.png");
 }
-#bc
+#bC
 {
     background-image: url("./crash.png");
 }
-#bd
+#bD
 {
     background-image: url("./kick.png");
 }
-#be
+#bE
 {
     background-image: url("./snare.png");
 }
